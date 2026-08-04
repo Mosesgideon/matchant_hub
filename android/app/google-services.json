@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "136591775193",
+    "project_id": "matchant-banking",
+    "storage_bucket": "matchant-banking.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136591775193:android:abfbe886c3c62f05fd35c8",
+        "android_client_info": {
+          "package_name": "com.example.marchant_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe6Cewd2MJiqPuI-exux_QqhLyUrgLxAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
