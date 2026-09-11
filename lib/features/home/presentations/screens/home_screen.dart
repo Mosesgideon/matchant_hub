@@ -21,11 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               AmountCad(),
               24.verticalSpace,
-
               PayItems(),
               24.verticalSpace,
               TodaySales(),
-
 
             ],
           ),
