@@ -1,29 +1,36 @@
 import 'package:flutter/material.dart';
 
-class Pallets {
-  Pallets._();
+class ColorUtilsPallets {
+  ColorUtilsPallets._();
 
   // Primary
-  static const Color primary = Color(0xFF0052FF);
+  static const Color primary = Color(0xFF003EC7);
   static const Color primaryDark = Color(0xFF003EC7);
+  static const Color primaryLight = Color(0xFF0052FF);
 
   // Backgrounds
   static const Color background = Color(0xFFF9F9FF);
-  static const Color white = Color(0xFFFFFFFF);
-  static const Color iconBackground = Color(0xFFF1F3FF);
+  static const Color surface = Color(0xFFFFFFFF);
+  static const Color avatarBackground = Color(0xFFDCE2F7);
 
   // Text
   static const Color textPrimary = Color(0xFF141B2B);
   static const Color textSecondary = Color(0xFF434656);
+  static const Color textMuted = Color(0xFF737688);
 
-  // Borders
+  // Border
   static const Color border = Color(0xFFC3C5D9);
 
-  // Recommended badge
-  static const Color recommendedBackground = Color(0xFF5CFD80);
-  static const Color recommendedText = Color(0xFF00732C);
+  // Status
+  static const Color success = Color(0xFF006E2A);
+  static const Color successLight = Color(0xFFE9F7EE);
 
-  // White text
-  static const Color whiteText = Color(0xFFFFFFFF);
-  static const Color whiteTextSecondary = Color(0xCCFFFFFF);
+  static const Color error = Color(0xFFBA1A1A);
+  static const Color errorLight = Color(0xFFFCEBEC);
+
+  // Progress
+  static const Color progressBackground = Color(0xFFE9EDFF);
+
+  // White overlays
+  static const Color white = Colors.white;
 }

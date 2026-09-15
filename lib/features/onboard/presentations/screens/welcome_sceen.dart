@@ -6,6 +6,7 @@ import 'package:marchant_hub/common/widgets/image_widget.dart';
 import 'package:marchant_hub/common/widgets/text_view.dart';
 import 'package:marchant_hub/core/theme/pallets.dart';
 import 'package:marchant_hub/features/auth/presentations/screens/signin.dart';
+import 'package:marchant_hub/features/auth/presentations/screens/signup.dart';
 import 'package:marchant_hub/features/dashboard/presentations/screens/dash_board.dart';
 
 class WelcomeSceen extends StatefulWidget {
@@ -77,7 +78,7 @@ class _WelcomeSceenState extends State<WelcomeSceen> {
                 15.verticalSpace,
                 CustomButton(
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>DashBoard()));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Signup()));
                   },
                   bgColor: Pallets.primary,
                   child: TextView(

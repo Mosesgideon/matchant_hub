@@ -5,6 +5,7 @@ import 'package:marchant_hub/common/widgets/custom_appbar.dart';
 import 'package:marchant_hub/common/widgets/image_widget.dart';
 import 'package:marchant_hub/common/widgets/text_view.dart';
 import 'package:marchant_hub/core/theme/pallets.dart';
+import 'package:marchant_hub/features/dashboard/presentations/screens/screens.dart';
 import 'package:marchant_hub/features/history/presentations/screens/history_tab.dart';
 import 'package:marchant_hub/features/home/presentations/screens/home_screen.dart';
 import 'package:marchant_hub/features/payments/presentations/screens/payments_screen.dart';
@@ -22,8 +23,8 @@ class _DashBoardState extends State<DashBoard> {
 
 
   List<Widget> pages=[
-    HomeScreen(),
-    PaymentsTab(),
+    MerchantDashboard(),
+    ReceivePaymentScreen(),
     HistoryTab(),
     HistoryTab(),
     HistoryTab(),
@@ -32,17 +33,17 @@ class _DashBoardState extends State<DashBoard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
-        tittle: TextView(
-          text: "Matchant Hub",
-          color: Pallets.primary,
-          style: Theme.of(context).textTheme.labelLarge?.copyWith(
-            color: Pallets.primary,
-            fontSize: 20,
-          ),
-        ),
-        actions: [Icon(Iconsax.eye, size: 16), 10.horizontalSpace],
-      ),
+      // appBar: CustomAppBar(
+      //   tittle: TextView(
+      //     text: "Matchant Hub",
+      //     color: Pallets.primary,
+      //     style: Theme.of(context).textTheme.labelLarge?.copyWith(
+      //       color: Pallets.primary,
+      //       fontSize: 20,
+      //     ),
+      //   ),
+      //   actions: [Icon(Iconsax.eye, size: 16), 10.horizontalSpace],
+      // ),
 
       body: IndexedStack(
         index: currentindex,
@@ -57,28 +58,28 @@ class _DashBoardState extends State<DashBoard> {
         items: [
           BottomNavigationBarItem(
             icon:  IgnorePointer(
-              child:  Icon(Icons.home_filled),
+              child:  Icon(Icons.home_outlined),
             ),
-            activeIcon:  Icon(Icons.home_filled),
+            activeIcon:  Icon(Icons.home_outlined),
             label: 'Home',
           ),
           
           BottomNavigationBarItem(
             icon:  IgnorePointer(
-              child:  Icon(Icons.payments_outlined),
+              child:  Icon(Icons.account_balance_wallet_outlined),
             ),
             activeIcon: IgnorePointer(
-              child: Icon(Icons.payments_outlined),
+              child: Icon(Icons.account_balance_wallet_outlined),
             ),
             label: 'Payments',
           ),
           
           BottomNavigationBarItem(
             icon:  IgnorePointer(
-              child: Icon(Icons.event_note),
+              child: Icon(Icons.receipt_long_outlined),
             ),
             activeIcon: IgnorePointer(
-              child: Icon(Icons.event_note),
+              child: Icon(Icons.receipt_long_outlined),
             ),
             label: 'History',
           ),
@@ -88,17 +89,17 @@ class _DashBoardState extends State<DashBoard> {
               child: Icon(Icons.insights_outlined),
             ),
             activeIcon: IgnorePointer(
-              child: Icon(Icons.insights_outlined),
+              child: Icon(Icons.menu),
             ),
             label: 'Insight',
           ),
           
           BottomNavigationBarItem(
             icon:  IgnorePointer(
-              child: Icon(Iconsax.more),
+              child: Icon(Iconsax.menu),
             ),
             activeIcon: IgnorePointer(
-              child: Icon(Iconsax.more),
+              child: Icon(Iconsax.menu),
             ),
             label: 'More',
           ),

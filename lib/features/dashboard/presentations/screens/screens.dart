@@ -51,7 +51,7 @@ class _MerchantDashboardState extends State<MerchantDashboard> {
           ],
         ),
       ),
-      bottomNavigationBar: _buildBottomNavigation(),
+      // bottomNavigationBar: _buildBottomNavigation(),
     );
   }
 
@@ -258,7 +258,7 @@ class _MerchantDashboardState extends State<MerchantDashboard> {
 
   Widget _buildSalesOverview() {
     return Container(
-      height: 145,
+      // height: 145,
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 12),
       decoration: BoxDecoration(
@@ -407,9 +407,9 @@ class _MerchantDashboardState extends State<MerchantDashboard> {
       crossAxisCount: 2,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      crossAxisSpacing: 10,
-      mainAxisSpacing: 10,
-      childAspectRatio: 1.08,
+      crossAxisSpacing: 15,
+      mainAxisSpacing: 15,
+      childAspectRatio: 1.6,
       children: [
         _quickAction(
           icon: Icons.qr_code_2,
