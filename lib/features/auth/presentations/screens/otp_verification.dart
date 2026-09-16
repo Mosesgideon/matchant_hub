@@ -19,7 +19,6 @@ class _OtpVerificationState extends State<OtpVerification> {
   @override
   final otpConteroller = TextEditingController();
   final _key = GlobalKey<FormState>();
-
   bool isTermsAccepted = false;
   bool termsHasError = false;
   bool val = false;
@@ -45,10 +44,10 @@ class _OtpVerificationState extends State<OtpVerification> {
                 child: Pinput(
                   controller: otpConteroller,
                   validator: MultiValidator([
-                    RequiredValidator(errorText: "otp is required",),
+                    RequiredValidator(errorText: "otp is required"),
                   ]).call,
                   errorText: 'This field is  required',
-                  errorTextStyle: TextStyle(fontSize: 12,color: Pallets.red),
+                  errorTextStyle: TextStyle(fontSize: 12, color: Pallets.red),
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   length: 4,
                   defaultPinTheme: PinTheme(

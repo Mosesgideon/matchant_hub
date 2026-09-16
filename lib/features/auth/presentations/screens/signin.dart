@@ -57,13 +57,13 @@ class _SigninScreenState extends State<SigninScreen> {
                   controller: emailConteroller,
                   validator: MultiValidator([
                 RequiredValidator(errorText: "email is required")
-              ])),
+              ]).call),
               20.verticalSpace,
               UnderlinedFormField(hint: "Password",
               controller: paswordConteroller,
                   validator: MultiValidator([
-                    RequiredValidator(errorText: "email is required")
-                  ])),
+                    RequiredValidator(errorText: "password is required")
+                  ]).call),
               15.verticalSpace,
               TextView(
                 text: "Forgot Password",
