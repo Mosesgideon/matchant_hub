@@ -38,15 +38,15 @@ class _OtpVerificationState extends State<OtpVerification> {
               10.verticalSpace,
               TextView(
                 text:
-                    "A 4 digit verification Code was sent to moses******@gmail.com",
+                    "A 4 digit OTP verification Code was sent to moses******@gmail.com",
               ),
-              20.verticalSpace,
+              25.verticalSpace,
               Center(
                 child: Pinput(
                   controller: otpConteroller,
                   validator: MultiValidator([
                     RequiredValidator(errorText: "otp is required",),
-                  ]),
+                  ]).call,
                   errorText: 'This field is  required',
                   errorTextStyle: TextStyle(fontSize: 12,color: Pallets.red),
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -70,7 +70,7 @@ class _OtpVerificationState extends State<OtpVerification> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  TextView(text: "Didn't recieve OTP ?, "),
+                  TextView(text: "Didn't receive OTP ?, "),
                   TextView(
                     text: "Resend OTP",
                     color: Pallets.primary,
